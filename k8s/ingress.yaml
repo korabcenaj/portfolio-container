@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: portfolio-web
+  namespace: portfolio
+  labels:
+    app: portfolio
+    component: web
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    # Uncomment for HTTPS with cert-manager
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: portfolio.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: portfolio-web
+            port:
+              number: 80
+  # Uncomment to enable HTTPS
+  # tls:
+  # - hosts:
+  #   - portfolio.local
+  #   secretName: portfolio-tls
