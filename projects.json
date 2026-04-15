@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Homelab Kubernetes Platform as Code",
-      "summary": "End-to-end platform provisioning with Terraform and Helm modules for ingress, monitoring, policy controls, backup tooling, and service hardening.",
+      "summary": "Built and operate a 4-node Kubernetes platform with 29 reusable Terraform modules covering ingress, monitoring, policy controls, backup tooling, and service hardening.",
       "tags": ["Terraform", "Kubernetes", "Helm", "GitHub Actions"],
       "links": [
         {
@@ -13,7 +13,7 @@
     },
     {
       "title": "Progressive Delivery with Argo Rollouts",
-      "summary": "Blue/green rollout pipeline for portfolio services with pre-promotion analysis templates backed by Prometheus success-rate and latency checks.",
+      "summary": "Implemented blue/green delivery with metric gates and fixed a production rollout blocker (port/probe mismatch) through GitOps in one commit, restoring Argo CD app health to Healthy.",
       "tags": ["Argo Rollouts", "Prometheus", "SLO Gates"],
       "links": [
         {
@@ -24,7 +24,7 @@
     },
     {
       "title": "Operational Resilience and Backup Verification",
-      "summary": "Automated backup generation and verification workflows, remote-state-aware snapshot logic, and tested restore guidance to improve disaster recovery confidence.",
+      "summary": "Automated backup and verification with remote-state-aware safeguards and recovery playbooks, integrated into 4 infrastructure workflows for repeatable operations.",
       "tags": ["Backup/DR", "Automation", "Velero"],
       "links": [
         {
@@ -39,7 +39,7 @@
     },
     {
       "title": "Security and Policy Enforcement",
-      "summary": "Namespace security baselines, network isolation, quota controls, and admission policy rollout patterns that can graduate from audit to enforce safely.",
+      "summary": "Applied namespace security baselines, default-deny networking, quotas, and staged policy enforcement patterns to reduce misconfiguration risk across platform workloads.",
       "tags": ["Kyverno", "NetworkPolicy", "PSS", "Hardening"],
       "links": [
         {
