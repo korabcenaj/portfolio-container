@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "title": "Homelab Kubernetes Platform as Code",
+      "summary": "End-to-end platform provisioning with Terraform and Helm modules for ingress, monitoring, policy controls, backup tooling, and service hardening.",
+      "tags": ["Terraform", "Kubernetes", "Helm", "GitHub Actions"],
+      "links": [
+        {
+          "label": "Terraform Repository",
+          "href": "https://github.com/korabcenaj/terraform"
+        }
+      ]
+    },
+    {
+      "title": "Progressive Delivery with Argo Rollouts",
+      "summary": "Blue/green rollout pipeline for portfolio services with pre-promotion analysis templates backed by Prometheus success-rate and latency checks.",
+      "tags": ["Argo Rollouts", "Prometheus", "SLO Gates"],
+      "links": [
+        {
+          "label": "Portfolio Application Repository",
+          "href": "https://github.com/korabcenaj/portfolio-container"
+        }
+      ]
+    },
+    {
+      "title": "Operational Resilience and Backup Verification",
+      "summary": "Automated backup generation and verification workflows, remote-state-aware snapshot logic, and tested restore guidance to improve disaster recovery confidence.",
+      "tags": ["Backup/DR", "Automation", "Velero"],
+      "links": [
+        {
+          "label": "Backup Script",
+          "href": "https://github.com/korabcenaj/terraform/blob/main/scripts/backup.sh"
+        },
+        {
+          "label": "Backup Verification Workflow",
+          "href": "https://github.com/korabcenaj/terraform/blob/main/.github/workflows/backup-verification.yml"
+        }
+      ]
+    },
+    {
+      "title": "Security and Policy Enforcement",
+      "summary": "Namespace security baselines, network isolation, quota controls, and admission policy rollout patterns that can graduate from audit to enforce safely.",
+      "tags": ["Kyverno", "NetworkPolicy", "PSS", "Hardening"],
+      "links": [
+        {
+          "label": "Infrastructure Security Docs",
+          "href": "https://github.com/korabcenaj/terraform/blob/main/README.md"
+        }
+      ]
+    }
+  ]
+}
