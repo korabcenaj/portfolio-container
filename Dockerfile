@@ -1,7 +1,7 @@
 FROM nginxinc/nginx-unprivileged:1.29-alpine
 
-COPY . /usr/share/nginx/html/
-RUN mv /usr/share/nginx/html/portfolio.html /usr/share/nginx/html/index.html
+COPY portfolio.html /usr/share/nginx/html/index.html
+COPY styles.css app.js projects.json projects.schema.json /usr/share/nginx/html/
 
 EXPOSE 8080
 
